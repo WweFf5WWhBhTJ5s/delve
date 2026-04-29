@@ -48,6 +48,12 @@ dlv connect <addr>
 dlv test github.com/your-org/your-package
 ```
 
+### Start a headless debug server (useful with editors like VS Code or GoLand)
+
+```bash
+dlv debug --headless --listen=:2345 --api-version=2 github.com/your-org/your-package
+```
+
 ## Differences from upstream
 
 This fork includes the following changes and improvements over the upstream [go-delve/delve](https://github.com/go-delve/delve):
